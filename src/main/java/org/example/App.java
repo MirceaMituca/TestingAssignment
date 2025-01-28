@@ -22,8 +22,18 @@ public class App
 {
     public static void main( String[] args )
     {
-        List<Calculation> distances = new ArrayList<>();
+        List<Input> distances = new ArrayList<>();
 
-        System.out.println( "Hello World!" );
+        distances.add(new Input("MM",Operations.ADDITION.name(),5));
+        distances.add(new Input("CM",Operations.SUBSTRACTION.name(),10));
+        distances.add(new Input("DM",Operations.ADDITION.name(),15));
+        distances.add(new Input("M",Operations.SUBSTRACTION.name(),7));
+        distances.add(new Input("KM",Operations.ADDITION.name(),9));
+
+        Calculation finalCalculation = new Calculation();
+            int totalDistanceValueInMM = Calculation.operationCalculation(distances);
+
+        System.out.println( "The total calculated millimeter value is " + totalDistanceValueInMM);
+
     }
 }
