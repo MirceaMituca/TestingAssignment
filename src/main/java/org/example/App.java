@@ -24,11 +24,11 @@ public class App
     {
         List<Input> distances = new ArrayList<>();
 
-        distances.add(new Input("MM",Operations.ADDITION.name(),5));
-        distances.add(new Input("CM",Operations.SUBSTRACTION.name(),10));
-        distances.add(new Input("DM",Operations.ADDITION.name(),15));
-        distances.add(new Input("M",Operations.SUBSTRACTION.name(),7));
-        distances.add(new Input("KM",Operations.ADDITION.name(),9));
+        distances.add(new Input(Measurements.MM.name(),Operations.ADDITION.name(),5));
+        distances.add(new Input(Measurements.CM.name(),Operations.SUBSTRACTION.name(),10));
+        distances.add(new Input(Measurements.DM.name(),Operations.ADDITION.name(),15));
+        distances.add(new Input(Measurements.M.name(),Operations.SUBSTRACTION.name(),7));
+        distances.add(new Input(Measurements.KM.name(),Operations.ADDITION.name(),9));
 
         Calculation finalCalculation = new Calculation();
             int totalDistanceValueInMM = Calculation.operationCalculation(distances);

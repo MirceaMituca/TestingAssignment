@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Calculation {
 
-    private static int Conversion(int distance, String measurement) {
+    protected static int Conversion(int distance, String measurement) {
         switch (measurement) {
             case "MM":
                 return distance;
